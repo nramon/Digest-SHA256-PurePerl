@@ -1,0 +1,47 @@
+=for HTML <a href="https://travis-ci.org/nramon/Digest-SHA256-PurePerl"><img src="https://travis-ci.org/nramon/Digest-SHA256-PurePerl.svg?branch=master" /></a>&nbsp;<a href="https://codecov.io/gh/nramon/Digest-SHA256-PurePerl"><img src="https://codecov.io/gh/nramon/Digest-SHA256-PurePerl/branch/master/graph/badge.svg" alt="Codecov" /></a>
+
+=head1 NAME
+
+Digest::SHA256::PurePerl - Pure Perl implementation of the SHA-256 algorithm.
+
+=head1 SYNOPSIS
+
+  use Digest::SHA256::PurePerl;
+  my $hash = sha256("input string");
+
+=head1 DESCRIPTION
+
+This is a Pure Perl implementation of the SHA-256 message-digest algorithm (see:
+http://en.wikipedia.org/wiki/SHA-2) that does not depend on any other modules.
+
+=head2 Methods
+
+=over 4
+
+=item * sha256()
+
+Returns the SHA-256 hash of the given string as a hex string.
+
+=back
+
+=head1 AUTHOR
+
+Ramon Novoa <ramonnovoa@gmail.com>
+
+=head1 COPYRIGHT
+
+Copyright (C) 2016 Ramon Novoa <ramonnovoa@gmail.com>
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+details.
+
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <http://www.gnu.org/licenses/>.
+
