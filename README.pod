@@ -1,8 +1,8 @@
-=for HTML <a href="https://github.com/nramon/Digest-SHA256-PurePerl/actions/workflows/ci.yml"><img src="https://github.com/nramon/Digest-SHA256-PurePerl/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>&nbsp;<a href="https://codecov.io/gh/nramon/Digest-SHA256-PurePerl"><img src="https://codecov.io/gh/nramon/Digest-SHA256-PurePerl/branch/master/graph/badge.svg" alt="Codecov" /></a>
-
 =head1 NAME
 
 Digest::SHA256::PurePerl - Pure Perl implementation of the SHA-256 algorithm.
+
+=for HTML <a href="https://github.com/nramon/Digest-SHA256-PurePerl/actions/workflows/ci.yml"><img src="https://github.com/nramon/Digest-SHA256-PurePerl/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>&nbsp;<a href="https://codecov.io/gh/nramon/Digest-SHA256-PurePerl"><img src="https://codecov.io/gh/nramon/Digest-SHA256-PurePerl/branch/master/graph/badge.svg" alt="Codecov" /></a>
 
 =head1 SYNOPSIS
 
