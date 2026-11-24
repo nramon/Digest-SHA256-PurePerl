@@ -19,14 +19,14 @@ jobs:
         with:
           perl-version: ${{ matrix.perl }}
       - name: Install dependencies
-        run: cpanm --quiet --notest Devel::Cover Devel::Cover::Report::Codecov Test::Perl::Critic
+        run: cpanm --quiet --notest Devel::Cover Devel::Cover::Report::Cobertura Test::Perl::Critic
       - name: Build
         run: perl Makefile.PL && make
       - name: Test with coverage
-        run: cover -test -report json
+        run: cover -test -report cobertura
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
         with:
-          files: cover_db/cover.json
+          files: cover_db/cobertura.xml
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: false
