@@ -1,4 +1,4 @@
-=for HTML <a href="https://travis-ci.org/nramon/Digest-SHA256-PurePerl"><img src="https://travis-ci.org/nramon/Digest-SHA256-PurePerl.svg?branch=master" /></a>&nbsp;<a href="https://codecov.io/gh/nramon/Digest-SHA256-PurePerl"><img src="https://codecov.io/gh/nramon/Digest-SHA256-PurePerl/branch/master/graph/badge.svg" alt="Codecov" /></a>
+=for HTML <a href="https://github.com/nramon/Digest-SHA256-PurePerl/actions/workflows/ci.yml"><img src="https://github.com/nramon/Digest-SHA256-PurePerl/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>&nbsp;<a href="https://codecov.io/gh/nramon/Digest-SHA256-PurePerl"><img src="https://codecov.io/gh/nramon/Digest-SHA256-PurePerl/branch/master/graph/badge.svg" alt="Codecov" /></a>
 
 =head1 NAME
 

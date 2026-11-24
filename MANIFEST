@@ -9,3 +9,7 @@ t/0_use.t
 t/1_undef.t
 t/2_empty.t
 t/3_sha256.t
+t/4_critic.t
+t/5_vectors.t
+t/6_lengths.t
+t/7_rotate.t
