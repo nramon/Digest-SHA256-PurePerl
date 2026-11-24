@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        perl: ['5.14', '5.20', '5.30', '5.36', 'latest']
+    name: Perl ${{ matrix.perl }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shogo82148/actions-setup-perl@v1
+        with:
+          perl-version: ${{ matrix.perl }}
+      - name: Install dependencies
+        run: cpanm --quiet --notest Devel::Cover Devel::Cover::Report::Codecov Test::Perl::Critic
+      - name: Build
+        run: perl Makefile.PL && make
+      - name: Test with coverage
+        run: cover -test -report json
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          files: cover_db/cover.json
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: false
